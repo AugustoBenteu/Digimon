@@ -47,8 +47,9 @@
         </div>
       </nav>
     <h1 style="margin-left: 2rem;"> Todos os Digimons</h1>
-    <% for (let digimon of digimons){ %> 
-        <div class="card" style="width: 18rem; margin-left: 2rem; margin-top: 2rem; display: inline-block;">
+    <div class="container-digimon" style="display: flex;flex-wrap: wrap;padding: 1rem;justify-content: space-around;">
+      <% for (let digimon of digimons){ %> 
+        <div class="card" style="width: 18rem; margin-left: 1rem; margin-top: 1rem; display: inline-block;">
             <img src="<%= digimon.img %>" class="card-img-top" alt="...">
             <div class="card-body">
             <hr class="dropdown-divider">
@@ -59,6 +60,8 @@
         </div>
     <% } %> 
     
+  </div>
+   
 
 
 
